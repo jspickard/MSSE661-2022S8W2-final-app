@@ -20,10 +20,27 @@ class User{
 
 var currentPhrase = "";
 
+//replacement for MongoDB until that functionality is implemented (limited)
+var icebreakers = [
+    "What do you think of",
+    "How about them",
+    "Why do you like those"
+];
+
+var subjects = [
+    "Eagles",
+    "Steelers",
+    "Cowboys"
+];
+
 function loginAttempt(username, password) {
     let enteredCredentials = new User(username, password);
     let authenticationMessage = autenticateOnlyUser(enteredCredentials); //not a realistic implementation
     alert(authenticationMessage);
+}
+
+function createAccountAttempt(username, password) {
+    alert("Can't create account yet. What are your thoughts on account creation?");
 }
 
 function autenticateOnlyUser(enteredCredentials) { 
@@ -32,19 +49,23 @@ function autenticateOnlyUser(enteredCredentials) {
 }
 
 function generatePhrase() {
-    currentPhrase = "Here's a phrase, do you like it?";
+    let icebreaker = icebreakers[Math.floor(icebreakers.length*Math.random())]; 
+    let subject = subjects[Math.floor(subjects.length*Math.random())];
+    currentPhrase = icebreaker + " " + subject + "?";
     document.getElementById("generatePhrase").innerHTML = currentPhrase;
     document.getElementById('generatePhrase').innerHTML += '<button type="button" onclick="savePhrase();">Save Phrase</button>'
 }
 
 function getHeader() {
     document.getElementById('getHeader').innerHTML += '<li><a href="./home.html">Home</a></li>';
+    document.getElementById('getHeader').innerHTML += '<li><a href="./index.html">Index</a></li>';
     document.getElementById('getHeader').innerHTML += '<li><a href="./about.html">About</a></li>';
     document.getElementById('getHeader').innerHTML += '<li><a href="./login.html">Login</a></li>';
 }
 
 function getFooter() {
     document.getElementById('getFooter').innerHTML += '<li><a href="./home.html">Home</a></li>';
+    document.getElementById('getFooter').innerHTML += '<li><a href="./index.html">Index</a></li>';
     document.getElementById('getFooter').innerHTML += '<li><a href="./about.html">About</a></li>';
     document.getElementById('getFooter').innerHTML += '<li><a href="./login.html">Login</a></li>';
     document.getElementById('getFooter').innerHTML += '<p>Author: <a href="https://github.com/jspickard">James Spickard</a></p>';
