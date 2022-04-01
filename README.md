@@ -27,7 +27,7 @@ This is a working project. Not all functionality has been completed yet. Below i
 2. Users cannot create accounts or login. (form present, buttons alert user)
 
 ## Preview
-![ Full Screenshot ](./ChitChatDynamo/screenshot.png)
+![ Full Screenshot ](./ChitChatDynamo/assets/screenshot.png)
 
 ## References
 Hurtado, A. (2020, July 2). Seinfeld Turns 30! Celebrate the Sitcom About Nothing With Over 100 Quotes from the Show. Parade.Com. Retrieved March 26, 2022, from https://parade.com/1043332/alexandra-hurtado/best-seinfeld-quotes/
