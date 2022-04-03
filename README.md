@@ -13,7 +13,7 @@ Welcome to Chitchat Dynamo: a dynamic website created by an introvert for introv
 1. Ensure node and node package manager is installed on the machine.
 2. Open project in VS Code. (cd ChitChatDynamo)
 3. In VS Code terminal, type "npm install".
-4. In VS Code terminal, type "node server/index.js".
+4. In VS Code terminal, type "npm start".
 
 
 ## Testing
@@ -24,7 +24,7 @@ Welcome to Chitchat Dynamo: a dynamic website created by an introvert for introv
 ## WIP notes
 This is a working project. Not all functionality has been completed yet. Below is a list of the missing functionality:
 1. Phrases cannot be saved. (button alerts user)
-2. Users cannot create accounts or login. (form present, buttons alert user)
+2. Only basic authentication reqs from Week4 implemented (can create user and _login, cannot logout or see any user customized details)
 
 ## Preview
 ![ Full Screenshot ](./ChitChatDynamo/assets/screenshot.png)
