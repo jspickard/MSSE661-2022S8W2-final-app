@@ -5,6 +5,7 @@
 
 body {
     background-color:aliceblue;
+    padding-top: 75px;
 }
 
 button {
@@ -17,7 +18,7 @@ button {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 50px;
     width: 100%;
@@ -58,13 +59,17 @@ li {
     margin-top: 150px;
 }
 
+.phrase-record-block {
+    padding-bottom: 15px;
+}
+
 .login {
     display: flex;
     flex-direction: column;
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 100px;
     width: 100%;

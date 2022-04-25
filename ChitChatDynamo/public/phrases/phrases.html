@@ -5,7 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/flexbox.css" />
-        <title>Chit Chat Dynamo</title>
+        <title>Build Fluid Layout</title>
     </head>
 
     <body>
@@ -16,12 +16,11 @@
                 </nav>
             </header>
 
-            <div class="content"><center>
-                <form>
-                    <p id="generatePhrase">What do you think of this phrase generator?</p>
-                    <button type="button" onclick="generatePhrase(event);">Generate Phrase</button>
-                </form>
-            </center></div>
+            <div class="contentAbout" id="content">
+                <div id="phrases-display">Current Entries:
+                    <div>Nothing here yet...save phrases from the home page when logged in.</div>
+                </div>
+            </div>
 
             <footer>
                 <nav>
